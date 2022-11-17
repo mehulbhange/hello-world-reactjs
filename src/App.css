@@ -1,10 +1,11 @@
-.App {
+.centerDiv {
   text-align: center;
 }
 
 img{
   display: block;
-  margin: O auto;
+  margin: 0 auto;
+  justify-content: center;
   width: 25%;
 }
 
@@ -13,4 +14,21 @@ img{
   font-size: 12px;
   font-style: italic;
   color: red;
+}
+html {
+  background-color: rgb(26, 23, 215);
+}
+
+body {
+  width: 650px;
+  margin: 0 auto;
+  background-color: rgb(225, 137, 5);
+  padding: 0 20px 20px 20px;
+  border: 5px solid;
+}
+p,li {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
 }
