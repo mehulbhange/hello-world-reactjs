@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.state ={
-      title:'Hello from Bridgelabz'
+      userName:''
     }
   }
 
@@ -16,11 +16,20 @@ class App extends React.Component {
       window.open(this.url,"_blank");
   }
 
+  onInputChange = (event) =>{
+    this.setState({
+      userName: event.target.value,
+    })
+  }
+
   render(){
     return (
       <div className="App">
-        <h1> {this.state.title} </h1>
+        <h1> Hello {this.state.userName} from Bridgelabz </h1>
         <img src={logo} onClick={this.onClick}  alt="Bridgelabz logo" />
+        <div>
+          <input onChange={this.onInputChange} />
+        </div>
       </div>
     );
   }
