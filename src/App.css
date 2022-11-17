@@ -7,3 +7,10 @@ img{
   margin: O auto;
   width: 25%;
 }
+
+.error-output{
+  margin-left: IOpx;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
